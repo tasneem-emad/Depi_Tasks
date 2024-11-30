@@ -1,0 +1,19 @@
+nav {
+    background-color: #1C325B;  
+    height: 50px; 
+}
+nav a {
+    color: white;
+}
+
+.header {
+    color: #1C325B;
+    background-image: url(images/bg_img.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 200px; */
+}
+.img_section img{
+    width: 300px;
+    height: 300px;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Map Example</title>
+    <meta name="description" content="Explore an interactive supermarket image map where you can click on various products like bananas, tuna, and bread to learn more about them.">
+    <meta name="keywords" content="supermarket, image map, interactive image, bananas, tuna, bread, educational, fun">
+</head>
+<body>
+    <center>
+        <h1>Interactive supermarket</h1>
+        <img src="supermarket.png" alt="supermarket" usemap="#marketmap">
+    </center>
+    
+    <map name="marketmap">
+        <area shape="rect" coords="207,68,307,153" href="https://en.wikipedia.org/wiki/Banana" alt="banana" title="banana">
+        <area shape="rect" coords="90,140,169,209" href="https://en.wikipedia.org/wiki/tuna" alt="tuna" title="tuna">
+        <area shape="rect" coords="235,230,362,310" href="https://en.wikipedia.org/wiki/bread" alt="bread" title="bread">
+    </map>
+</body>
+</html>
