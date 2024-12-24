@@ -1,0 +1,32 @@
+.outer{
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #ccc;
+}
+
+.outer img{
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+.inner{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    transform: scale(0) rotate(0deg); 
+    transition: transform 1s ease;
+    opacity: 0;
+}
+
+.outer:hover .inner{
+    transform: scale(1) rotate(360deg);
+    opacity: 1;
+}
+
+

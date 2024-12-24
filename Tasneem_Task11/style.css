@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(images/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    font-size: 16px;
+    font-family: "Comic Neue", cursive;
+    /* overflow: hidden; */
+}
+.container{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    height: 100vh;
+}
+
+.container .title{
+    width: 100%;
+    margin: 1rem 0rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px white;
+    border: none;
+    backdrop-filter: blur(5px);
+    padding: 0.5rem;
+    /* height: 10vh; */
+}
+.container h1{
+    font-size: 2.5rem;
+}
+.container .cards_container{
+    width: 100%;
+    height: 85vh;
+}
+.container .cards_container .card{
+    float: left;
+    margin: 0rem 0.5rem;
+    padding: 1rem;
+    width: calc((100% / 3) - 1rem);
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* border: 1px solid #00CC92ff; */
+    border-radius: 10px;
+    overflow: hidden;
+}
+.container .cards_container .card .story_content{
+    padding: 1rem;
+    text-align: justify;
+    overflow-y: scroll;
+
+    height: 50%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    
+}
+.card h2 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0rem;
+    border-radius: 10px;
+    color: white;
+}
+.card .story1{
+    background-color: #00CC92ff;
+}
+.card .story2{
+    background-color: #FF6066ff;
+}
+.card .story3{
+    background-color: #FFCC15ff;
+}
+.card img{
+    width: 50%;
+    margin: 1rem 0;
+    /* height: 100px; */
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container h1 {
+        font-size: 2rem;
+    }
+
+    .container .cards_container .card {
+        width: calc(50% - 1rem);
+        overflow: hidden;
+    }
+
+    .card img {
+        width: 80%; 
+        max-width: 150px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    .container h1 {
+        font-size: 1.5rem;
+    }
+
+    .container .cards_container .card {
+        width: 100%; 
+        margin: 0.5rem 0;
+        overflow: hidden;
+    }
+
+    .card img {
+        width: 90%; 
+        max-width: 120px;
+    }
+}
